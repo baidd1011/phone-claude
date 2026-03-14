@@ -1,0 +1,17 @@
+{
+  "name": "@phone-claude/agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "probe:claude": "tsx src/ptyProbe.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@phone-claude/protocol": "*",
+    "node-pty": "^1.0.0"
+  }
+}

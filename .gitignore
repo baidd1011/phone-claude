@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.local
+.data/
+*.tsbuildinfo
+apps/mobile/.vite/
+apps/mobile/.vercel/
+apps/mobile/playwright-report/
+apps/mobile/test-results/
+caddy.exe
+ops/relay/windows/relay.env.ps1
+ops/agent/windows/agent.env.ps1

@@ -1,0 +1,15 @@
+[Unit]
+Description=phone-claude relay
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/phone-claude
+EnvironmentFile=/opt/phone-claude/ops/relay/.env
+ExecStart=/usr/bin/npm run start --workspace @phone-claude/relay
+Restart=always
+RestartSec=5
+User=phoneclaude
+
+[Install]
+WantedBy=multi-user.target

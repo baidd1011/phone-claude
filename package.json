@@ -1,0 +1,23 @@
+{
+  "name": "phone-claude",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "dev:relay": "npm run dev --workspace @phone-claude/relay",
+    "dev:agent": "npm run dev --workspace @phone-claude/agent",
+    "dev:mobile": "npm run dev --workspace @phone-claude/mobile"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
