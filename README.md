@@ -1,5 +1,7 @@
 # phone-claude
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 Control a Windows-hosted Claude CLI from your phone over the public internet.
 
 This project is a small personal-use remote control stack:
