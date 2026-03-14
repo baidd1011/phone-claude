@@ -31,6 +31,16 @@
   -> Claude CLI
 ```
 
+```mermaid
+flowchart TD
+    A[手机浏览器 / PWA] --> B[cpolar 公网地址]
+    B --> C[Windows 上的 Caddy :8080]
+    C -->|/| D[已构建的移动端页面]
+    C -->|/api + /ws + /health| E[Relay 127.0.0.1:8787]
+    E --> F[Windows Agent]
+    F --> G[Claude CLI]
+```
+
 如果你没有 VPS，当前最简单可用的部署方式是：
 
 ```text

@@ -31,6 +31,16 @@ Phone browser / PWA
   -> Claude CLI
 ```
 
+```mermaid
+flowchart TD
+    A[Phone Browser / PWA] --> B[cpolar Public URL]
+    B --> C[Caddy :8080 on Windows]
+    C -->|/| D[Built Mobile App]
+    C -->|/api + /ws + /health| E[Relay 127.0.0.1:8787]
+    E --> F[Windows Agent]
+    F --> G[Claude CLI]
+```
+
 For public access without a VPS, the simplest working setup is:
 
 ```text
